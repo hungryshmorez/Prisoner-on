@@ -1,0 +1,33 @@
+CACHE//ZERO v26 — ROUTINE MACHINE
+
+PRISON WORK
+- RØ can take one of five prison work assignments:
+  * Kitchen Detail
+  * Maintenance
+  * Laundry Detail
+  * Yard Crew
+  * Gym Orderly
+- Work call runs 07:45–08:55 prison time and temporarily overrides RØ's normal morning route.
+- RØ must spend enough real simulation minutes at the correct work location to complete the shift.
+- Completed shifts pay credits, build a work streak, improve work reputation, slightly improve the job-related fighter stat, and can affect guard respect.
+- Missed work creates infractions, reputation/attention penalties, and repeated misses can suspend the assignment.
+- Lockdowns, medical status, segregation, and serious injury can excuse the work call.
+- Work accidents depend on assignment, fatigue, energy, and protective/improvised gear.
+- Autopilot reports to work and remains on assignment automatically.
+
+NPC ROUTINES
+- Named/dynamic inmates receive deterministic work assignments.
+- During work call, their physical schedule changes to the corresponding work location.
+- WORLD inmate cards now display the inmate's prison job.
+
+BODY TRANSFORMATION
+- Training strength and conditioning now feed a persistent visual body profile.
+- RØ's sprite bulk and conditioned appearance change gradually rather than only from immediate stats.
+- Posture can become guarded, ready, slumped, confident, or neutral based on trauma, aggression, morale, energy, and personality anchors.
+- Fights and serious work accidents can leave persistent pixel scars/burns/bruises.
+- The FIGHTER view now displays physical profile/posture and permanent marks.
+
+STABILITY
+- v25 save migration retained.
+- v26 work/body state validates on load and every tick.
+- render-loop crash guard and safe-location handling retained.
