@@ -19,6 +19,7 @@ Pages URL (it serves `index.html` from the repo root).
 | --- | --- |
 | `index.html` | The entire game (markup, CSS, and JS in one file). |
 | `V26_NOTES.txt` | Author's release notes for the v26 build. |
+| `tests/` | Headless-Chromium checks (see `tests/README.md`). |
 
 ## v26 patch notes (this build)
 
@@ -40,6 +41,28 @@ This build includes fixes on top of the original v26 export:
 - **Minor** — `startBattle` runs its cooldown/injury guards before recording a
   "sent to fight" memory (no false memory on a blocked fight); removed a
   dead no-op credits line in the meal action.
+
+## v27 — menus and autopilot
+
+- **Dropdowns / lost taps (root cause fixed).** The side panels were rebuilt from
+  scratch several times a second, which destroyed an open dropdown after a split
+  second and swallowed taps that landed mid-rebuild (measured: only ~58% of
+  finger-length taps on a rebuilt button registered). Unchanged panels are no
+  longer rebuilt, rebuilds pause while a pointer is down in the sidebar, and the
+  two autopilot dropdowns are now button groups. Same test now: 40/40 taps.
+- **Care bar on every screen.** MEAL / SNACK / WATER / WASH / REST are pinned under
+  the stats on every tab (and stay pinned when the page scrolls on a phone). In
+  CELL 00 they use the existing tray and sink; anywhere else the care is brought
+  to him on the spot, with short cooldowns so it cannot be spammed.
+- **Context tab that follows him.** The first tab is "HERE" plus his location. In the
+  cell it shows privileges, orders and discipline; in the gym and yard it shows
+  training, learned moves, the yard ladder and friend challenges. A new
+  **STUDY / MIND** training builds technique and speed cheaply.
+- **Autopilot tab.** Pick a **focus** (balanced, care, physical, fighting, intellect,
+  interactions) and an **intensity** (easy, balanced, hard). Hard decides faster,
+  pushes through fatigue, and can pull him off the daily schedule to chase the
+  focus (weight pit, yard, or wherever there is company). Autopilot also uses the
+  care bar when he is starving or parched away from the cell.
 
 ## Save data
 

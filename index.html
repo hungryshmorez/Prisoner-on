@@ -32,12 +32,12 @@
 #toast{position:fixed;left:14px;bottom:14px;z-index:30;background:#050805ed;border:1px solid #4c5949;padding:9px 11px;font-size:8px;max-width:min(430px,82vw);opacity:0;transform:translateY(8px);pointer-events:none;transition:.18s}.toastOn{opacity:1!important;transform:none!important}
 
 /* fighter / yard systems */
-#tabs{grid-template-columns:repeat(9,1fr)}
+#tabs{grid-template-columns:repeat(8,1fr)}
 .fighterHero{border:1px solid #394436;background:linear-gradient(135deg,#0d140d,#070907);padding:10px;margin-bottom:10px}.fighterTop{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.fighterName{font-size:20px;letter-spacing:-.05em}.fighterName span{color:var(--lime)}.levelBadge{font-size:9px;border:1px solid #60705b;padding:6px 8px;background:#050805;color:#dfffc9}.xpbar{height:7px;background:#020302;border:1px solid #303b2d;margin:8px 0 4px;overflow:hidden}.xpbar>div{height:100%;background:#8fcf59}.fighterGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin-top:8px}.fighterStat{border:1px solid #2d352b;background:#050705;padding:6px;text-align:center}.fighterStat b{display:block;font-size:13px;color:#e8efdf}.fighterStat small{font-size:7px;color:#7b8777}.moveCard{border:1px solid #30382e;background:#070a07;padding:7px;margin-bottom:6px}.moveCard.locked{opacity:.42}.moveHead{display:flex;justify-content:space-between;gap:8px}.moveHead b{font-size:9px}.moveHead span{font-size:7px;color:var(--lime)}.moveCard small{display:block;color:#7e887a;font-size:7px;line-height:1.35;margin-top:3px}.rankRow{display:grid;grid-template-columns:32px 1fr auto;gap:8px;align-items:center;padding:6px;border-bottom:1px dotted #273026;font-size:8px}.rankRow.current{background:#101710;border:1px solid #40503c}.rankRow.defeated{opacity:.48}.rankNum{color:#8da480}.rankName{color:#e0e6dd}.rankTag{color:#8a9686}.friendBox textarea{width:100%;min-height:78px;resize:vertical;background:#030503;color:#dce3d6;border:1px solid #465143;padding:8px;font:8px monospace;outline:none}.friendBox textarea:focus{border-color:#799865}.friendRow{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px}.micro{font-size:7px;color:#6e786b;line-height:1.4}.trainingReadout{border-left:2px solid #84b857;padding:7px 8px;background:#080b08;font-size:8px;color:#98a493;line-height:1.5}.battleLaunch{width:100%;text-align:center;font-size:10px;min-height:46px}.battleLaunch strong{color:var(--lime)}
 #battleModal{position:fixed;inset:0;z-index:50;background:#010201f4;display:none;place-items:center;padding:14px}.battleBox{width:min(900px,96vw);max-height:94dvh;overflow:auto;background:#070a07;border:1px solid #566252;box-shadow:0 25px 100px #000;padding:12px}.battleHeader{display:flex;justify-content:space-between;gap:12px;align-items:center;border-bottom:1px solid #2d342c;padding-bottom:8px;margin-bottom:8px}.battleTitle{font-size:17px;letter-spacing:-.04em}.battleTitle span{color:var(--lime)}.battleMeta{font-size:8px;color:#7b8677;text-align:right}.battleStage{position:relative;border:1px solid #31392f;background:#030403;margin-bottom:8px;overflow:hidden}.battleStage canvas{display:block;width:100%;height:auto;image-rendering:pixelated}.battleBars{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}.fighterBar{border:1px solid #30382e;background:#050705;padding:7px}.fighterBarTop{display:flex;justify-content:space-between;font-size:8px;margin-bottom:4px}.hp,.stam{height:7px;background:#010201;border:1px solid #273025;margin-top:3px;overflow:hidden}.hp div{height:100%;background:#b8d86b}.stam div{height:100%;background:#70a5b7}.battleLog{height:110px;overflow:auto;border:1px solid #2a3129;background:#030503;padding:7px;font-size:8px;line-height:1.45;margin-bottom:8px}.battleControls{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.battleControls button{font-size:8px;text-align:center}.battleResult{display:none;border:1px solid #63725d;padding:12px;background:#0b100a;margin-top:8px;text-align:center}.battleResult h3{margin:0 0 5px;font-size:18px}.battleResult p{font-size:8px;color:#9aa594}.battleResult button{text-align:center}.pulse{animation:pulse .25s ease}@keyframes pulse{50%{filter:brightness(1.8)}}
-@media(max-width:560px){#tabs{grid-template-columns:repeat(9,1fr)}.fighterGrid{grid-template-columns:repeat(3,1fr)}.battleControls{grid-template-columns:1fr 1fr}.battleBars{grid-template-columns:1fr}.fighterTop{align-items:center}}
+@media(max-width:560px){#tabs{grid-template-columns:repeat(8,1fr)}.fighterGrid{grid-template-columns:repeat(3,1fr)}.battleControls{grid-template-columns:1fr 1fr}.battleBars{grid-template-columns:1fr}.fighterTop{align-items:center}}
 @media(max-width:980px){html,body{overflow:auto}#app{position:relative;min-height:100dvh;grid-template-columns:1fr;grid-template-rows:min(58dvh,620px) minmax(520px,auto)}#viewport{border-right:0;border-bottom:1px solid #252b24;min-height:390px}#sidebar{overflow:visible}#content{overflow:visible}.panel{min-height:270px}}
-@media(max-width:560px){#app{grid-template-rows:48dvh auto}#stats{grid-template-columns:repeat(2,1fr)}#tabs{grid-template-columns:repeat(9,1fr)}.tab{font-size:7px}.grid3{grid-template-columns:1fr 1fr}#objective{max-width:70%}#bubble{bottom:18px;width:91%}}
+@media(max-width:560px){#app{grid-template-rows:48dvh auto}#stats{grid-template-columns:repeat(2,1fr)}#tabs{grid-template-columns:repeat(8,1fr)}.tab{font-size:7px}.grid3{grid-template-columns:1fr 1fr}#objective{max-width:70%}#bubble{bottom:18px;width:91%}}
 \n/* v15 active systems */
 .momentum{height:5px;background:#070907;border:1px solid #364131;margin-top:2px;overflow:hidden}.momentum>div{height:100%;background:#a8d66f;width:0}
 .battleTactics{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;padding:7px;border-top:1px solid #2d352b;background:#080b08}.battleTactics button.active{outline:1px solid #b7ff77;background:#172016}
@@ -118,6 +118,15 @@
 .workMeter{height:6px;border:1px solid #343b31;background:#040604;margin:5px 0}.workMeter>div{height:100%;background:#9bbb73}
 .workTag{display:inline-block;border:1px solid #596356;padding:2px 5px;margin-left:4px;font-size:7px;color:#c7d4c0}
 .bodyMark{color:#c99d8e}
+
+/* v27 care dock, context menu, segmented autopilot controls */
+.careDock{padding:7px 10px 8px;border-bottom:1px solid #252c24;background:#080b08;position:sticky;top:0;z-index:6}
+.dockHead{display:flex;justify-content:space-between;gap:8px;font-size:8px;letter-spacing:.12em;color:#8a9686;margin-bottom:5px}.dockHead span+span{letter-spacing:.02em;color:#6e786b;text-align:right}
+.dockRow{display:grid;grid-template-columns:repeat(5,1fr);gap:5px}.dockRow button{text-align:center;font-size:9px;min-height:36px;padding:5px 2px}
+.hereSec{display:none}.hereSec.on{display:block}.hereLoc{color:#8fbf5c;font-size:7px;letter-spacing:.06em}
+.segLabel{font-size:8px;letter-spacing:.12em;color:#8a9686;margin:9px 0 3px}.seg{display:grid;gap:4px}.seg.c3{grid-template-columns:repeat(3,1fr)}
+.seg button{text-align:center;font-size:8px;min-height:34px;padding:4px 2px}.seg button.active{outline:1px solid #b7ff77;background:#172016;color:#e8ffd8}
+.segHelp{font-size:8px;color:#8a9686;line-height:1.4;margin-top:4px}
 </style>
 </head>
 <body>
@@ -130,28 +139,21 @@
 <div id="objective">CURRENT READ: <b id="objectiveText">Observe the cell.</b></div>
 </section>
 <aside id="sidebar">
-<header id="header"><div class="brand"><h1>CACHE<span>//</span>ZERO</h1><small>REMOTE CUSTODY<br>TERMINAL v26.0</small></div><div id="statusLine"><span class="statusTag">STATE <strong id="stateTag">CALM</strong></span><span class="statusTag">RELATION <strong id="relationTag">GUARDED</strong></span><span class="statusTag">LVL <strong id="levelTag">1</strong></span><span class="statusTag">CREDITS <strong id="creditsTag">12</strong></span></div><div id="stats"></div></header>
-<nav id="tabs"><button class="tab active" data-tab="care">CARE</button><button class="tab" data-tab="control">CONTROL</button><button class="tab" data-tab="chat">TEXT</button><button class="tab" data-tab="yard">YARD</button><button class="tab" data-tab="world">WORLD</button><button class="tab" data-tab="power">POWER</button><button class="tab" data-tab="cell">CELL</button><button class="tab" data-tab="mind">MIND</button><button class="tab" data-tab="records">LOG</button></nav>
+<header id="header"><div class="brand"><h1>CACHE<span>//</span>ZERO</h1><small>REMOTE CUSTODY<br>TERMINAL v27.0</small></div><div id="statusLine"><span class="statusTag">STATE <strong id="stateTag">CALM</strong></span><span class="statusTag">RELATION <strong id="relationTag">GUARDED</strong></span><span class="statusTag">LVL <strong id="levelTag">1</strong></span><span class="statusTag">CREDITS <strong id="creditsTag">12</strong></span></div><div id="stats"></div></header>
+<div id="careDock" class="careDock" role="group" aria-label="Care actions, available on every screen"><div class="dockHead"><span>CARE // ALWAYS ON</span><span id="dockHint"></span></div><div class="dockRow"><button class="primary" data-care="meal" title="Feed him">MEAL</button><button data-care="snack" title="Small snack">SNACK</button><button data-care="water" title="Give him water">WATER</button><button data-care="wash" title="Let him wash up">WASH</button><button data-care="rest" title="Recovery session">REST</button></div></div>
+<nav id="tabs"><button class="tab active" id="hereTab" data-tab="here">HERE</button><button class="tab" id="autoTab" data-tab="auto">AUTO</button><button class="tab" data-tab="chat">TEXT</button><button class="tab" data-tab="world">WORLD</button><button class="tab" data-tab="power">POWER</button><button class="tab" data-tab="cell">CELL</button><button class="tab" data-tab="mind">MIND</button><button class="tab" data-tab="records">LOG</button></nav>
 <main id="content">
-<section class="panel active" data-panel="care">
-<div class="section"><h3>FOOD / BASIC CARE</h3><div class="grid2"><button class="action primary" data-action="meal">SERVE MEAL<small>warm tray; RØ must walk over and eat it</small></button><button class="action" data-action="snack">GIVE SNACK<small>small morale gain</small></button><button class="action" data-action="water">REFILL WATER<small>restores hydration</small></button><button class="action warn" data-action="removeFood">REMOVE TRAY<small>pull food back out of the slot</small></button></div></div>
-<div class="section"><h3>PRIVILEGES</h3><div class="grid2"><button class="action" data-action="radio">RADIO<small>toggle music feed</small></button><button class="action" data-action="book">BOOK<small>issue or remove reading material</small></button><button class="action" data-action="blanket">BLANKET<small>issue or revoke bedding</small></button><button class="action" data-action="artkit">ART KIT<small>paper + dull pencil</small></button></div></div>
-<div class="callout" id="careReadout"></div>
+<section class="panel active" data-panel="here">
+<div class="section"><h3 id="hereTitle">WHERE HE IS</h3><div class="callout" id="hereInfo"></div></div>
+<div class="section"><div class="callout" id="careReadout"></div></div>
+<div class="hereSec" data-here="cell"><div class="section"><h3>PRIVILEGES</h3><div class="grid2"><button class="action" data-action="radio">RADIO<small>toggle music feed</small></button><button class="action" data-action="book">BOOK<small>issue or remove reading material</small></button><button class="action" data-action="blanket">BLANKET<small>issue or revoke bedding</small></button><button class="action" data-action="artkit">ART KIT<small>paper + dull pencil</small></button><button class="action warn" data-action="removeFood">REMOVE TRAY<small>pull food back out of the slot</small></button></div></div><div class="section"><h3>OBSERVATION / ORDERS</h3><div class="grid2"><button class="action" data-action="call">CALL TO GLASS<small>RØ walks to the observation window</small></button><button class="action" data-action="bed">ORDER: BED<small>send him to sit down</small></button><button class="action" data-action="stand">ORDER: STAND<small>inspection posture</small></button><button class="action" data-action="status">REQUEST STATUS<small>ask for a direct report</small></button></div></div></div>
+<div class="hereSec" data-here="cell gym yard"><div id="fighterHero" class="fighterHero"></div><div class="section"><h3>TRAINING BLOCK</h3><div class="grid2"><button class="action primary" data-train="strength">LIFT / STRENGTH<small>power + clinch force; costs energy and food</small></button><button class="action primary" data-train="speed">FOOTWORK / SPEED<small>accuracy, evasion and initiative</small></button><button class="action primary" data-train="technique">DRILLS / TECHNIQUE<small>move accuracy and unlock requirements</small></button><button class="action primary" data-train="grit">BAG / GRIT<small>health, damage resistance and recovery</small></button><button class="action" data-train="conditioning">ROADWORK / CONDITION<small>larger stamina pool and faster recovery</small></button><button class="action primary" data-train="study">STUDY / MIND<small>technique + speed; cheap on energy, better with a book</small></button><button class="action" data-train="rest">RECOVERY SESSION<small>reduce training fatigue; small morale gain</small></button></div><div id="trainingReadout" class="trainingReadout" style="margin-top:7px"></div></div></div>
+<div class="hereSec" data-here="gym yard"><div class="section"><h3>LEARNED MOVES</h3><div id="moveList"></div></div><div class="section"><h3>LEADER OF THE YARD</h3><div id="ladder"></div><button id="yardFightBtn" class="battleLaunch primary">FIGHT NEXT RIVAL</button></div><div class="section friendBox"><h3>FRIEND PRISONER // OFFLINE CHALLENGE</h3><div class="callout">Export RØ as a prisoner code and send it to a friend. Paste their code here to fight their saved prisoner. These codes work without a server, so they are portable rather than live-synchronized.</div><textarea id="friendCode" spellcheck="false" placeholder="Paste a CACHE//ZERO prisoner code here..."></textarea><div class="friendRow"><button id="exportBtn">EXPORT MY RØ</button><button id="importFightBtn" class="primary">IMPORT + FIGHT</button></div><div id="friendStatus" class="micro" style="margin-top:6px">No challenger loaded.</div></div></div>
+<div class="hereSec" data-here="all"><div class="section"><h3>DISCIPLINE</h3><div class="grid2"><button class="action warn" data-action="lights">LIGHTS<small>toggle overhead fixture</small></button><button class="action warn" data-action="silence">SILENCE MODE<small>disable text link briefly</small></button><button class="action danger" data-action="revoke">REVOKE PRIVILEGES<small>radio, book, blanket, art kit</small></button><button class="action warn" data-action="restriction">CELL RESTRICTION<small>RØ stays near bed for a while</small></button></div></div><div class="callout warning">Discipline can increase compliance, but repeated deprivation increases tension and changes what RØ remembers about you.</div></div>
 </section>
-<section class="panel" data-panel="control">
-<div class="section"><h3>OBSERVATION / ORDERS</h3><div class="grid2"><button class="action" data-action="call">CALL TO GLASS<small>RØ walks to the observation window</small></button><button class="action" data-action="bed">ORDER: BED<small>send him to sit down</small></button><button class="action" data-action="stand">ORDER: STAND<small>inspection posture</small></button><button class="action" data-action="status">REQUEST STATUS<small>ask for a direct report</small></button></div></div>
-<div class="section"><h3>DISCIPLINE</h3><div class="grid2"><button class="action warn" data-action="lights">LIGHTS<small>toggle overhead fixture</small></button><button class="action warn" data-action="silence">SILENCE MODE<small>disable text link briefly</small></button><button class="action danger" data-action="revoke">REVOKE PRIVILEGES<small>radio, book, blanket, art kit</small></button><button class="action warn" data-action="restriction">CELL RESTRICTION<small>RØ stays near bed for a while</small></button></div></div>
-<div class="callout warning">Discipline can increase compliance, but repeated deprivation increases tension and changes what RØ remembers about you.</div>
-</section>
+<section class="panel" data-panel="auto"><div class="section"><h3>AUTOPILOT</h3><div id="autopilotPanel" class="callout"></div></div></section>
 <section class="panel" data-panel="chat">
 <div id="chatLog"></div><div id="composer"><input id="chatInput" maxlength="220" autocomplete="off" placeholder="Text prisoner RØ..."/><button id="sendBtn" class="primary">SEND</button></div><div class="quick"><button data-say="How are you?">HOW ARE YOU?</button><button data-say="What do you need?">WHAT DO YOU NEED?</button><button data-say="Tell me your real name.">YOUR NAME?</button><button data-say="Why are you in here?">WHY HERE?</button><button data-say="Do you trust me?">TRUST ME?</button><button data-say="I'm sorry.">I'M SORRY.</button></div><div class="callout" style="margin-top:8px" id="chatHint">RØ remembers broad patterns: care, deprivation, promises, apologies, and how often you talk to him.</div>
-</section>
-<section class="panel" data-panel="yard">
-<div id="fighterHero" class="fighterHero"></div>
-<div class="section"><h3>TRAINING BLOCK</h3><div class="grid2"><button class="action primary" data-train="strength">LIFT / STRENGTH<small>power + clinch force; costs energy and food</small></button><button class="action primary" data-train="speed">FOOTWORK / SPEED<small>accuracy, evasion and initiative</small></button><button class="action primary" data-train="technique">DRILLS / TECHNIQUE<small>move accuracy and unlock requirements</small></button><button class="action primary" data-train="grit">BAG / GRIT<small>health, damage resistance and recovery</small></button><button class="action" data-train="conditioning">ROADWORK / CONDITION<small>larger stamina pool and faster recovery</small></button><button class="action" data-train="rest">RECOVERY SESSION<small>reduce training fatigue; small morale gain</small></button></div><div id="trainingReadout" class="trainingReadout" style="margin-top:7px"></div></div>
-<div class="section"><h3>LEARNED MOVES</h3><div id="moveList"></div></div>
-<div class="section"><h3>LEADER OF THE YARD</h3><div id="ladder"></div><button id="yardFightBtn" class="battleLaunch primary">FIGHT NEXT RIVAL</button></div>
-<div class="section friendBox"><h3>FRIEND PRISONER // OFFLINE CHALLENGE</h3><div class="callout">Export RØ as a prisoner code and send it to a friend. Paste their code here to fight their saved prisoner. These codes work without a server, so they are portable rather than live-synchronized.</div><textarea id="friendCode" spellcheck="false" placeholder="Paste a CACHE//ZERO prisoner code here..."></textarea><div class="friendRow"><button id="exportBtn">EXPORT MY RØ</button><button id="importFightBtn" class="primary">IMPORT + FIGHT</button></div><div id="friendStatus" class="micro" style="margin-top:6px">No challenger loaded.</div></div>
 </section>
 
 <section class="panel" data-panel="world">
@@ -172,7 +174,6 @@
 
 <section class="panel" data-panel="power">
 <div class="section"><h3>PRISON POWER</h3><div id="powerSummary" class="powerGrid"></div><div id="guardStatus"></div></div>
-<div class="section"><h3>AUTOPILOT</h3><div id="autopilotPanel" class="callout"></div></div>
 <div class="section"><h3>PRISON WORK</h3><div id="prisonWork" class="callout"></div></div>
 <div class="section"><h3>CREW STATUS</h3><div id="crewStatus" class="callout"></div><div id="crewActions" class="interactionGrid" style="margin-top:7px"></div></div>
 <div class="section"><h3>CREW POLITICS</h3><div id="crewPolitics" class="callout"></div></div>
@@ -231,6 +232,16 @@
 <div id="startupCrash"></div><div id="offlineTicker"></div><div id="toast"></div>
 <script>
 (()=>{'use strict';
+// Skip no-op innerHTML writes. The side panels re-render from state many times a
+// second; rebuilding identical markup destroys the live DOM, which closed open
+// dropdowns after a split second and swallowed taps that landed mid-rebuild.
+// A write is skipped only when the markup equals the last write AND the element
+// still serialises exactly as it did after that write (so any outside change to
+// the subtree forces a real rebuild). Render functions re-attach their handlers
+// after every write, so skipped writes still get fresh handlers.
+(()=>{const d=Object.getOwnPropertyDescriptor(Element.prototype,'innerHTML');if(!d||!d.set||!d.get)return;
+ Object.defineProperty(Element.prototype,'innerHTML',{configurable:true,enumerable:d.enumerable,get:d.get,
+  set(v){const s=String(v);if(this.__h===s&&this.__s===d.get.call(this))return;d.set.call(this,s);this.__h=s;this.__s=d.get.call(this)}})})();
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 function showFatal(message){
   try{
@@ -275,7 +286,7 @@ activeGoal:'observe',goalUtility:0,goalSince:now(),lastConsolidatedDay:0,lastTho
  playerStatus:{type:null,until:0,reason:''},
  craft:{materials:{scrap:2,cloth:1,wire:1},items:{wraps:0,pouch:0,ventHook:0,waterBag:0,towelRope:0},lastScavengeAt:-9999},
  carryBase:5,leverageUsed:[],territoryPresence:{},
- autopilot:{enabled:false,mode:'balanced',risk:'safe',combat:true,social:true,training:true,lastDecisionAt:-9999,lastCombatAt:0,decision:'manual',log:[]},
+ autopilot:{enabled:false,mode:'balanced',intensity:'balanced',risk:'safe',combat:true,social:true,training:true,lastDecisionAt:-9999,lastCombatAt:0,decision:'manual',log:[]},
  ownCrew:{active:false,id:'crew_r0_cell_zero',name:'CELL ZERO',members:[],morale:.55,cohesion:.55,resources:0,heat:0},
  diplomacy:{alliances:[],rivalries:[],lastScanAt:-9999},
  opponentHabits:{},
@@ -540,7 +551,7 @@ function effectiveStats(f=S.fighter,home=true){let mod=1;if(home){mod=.62+.38*re
 function gainXP(n,reason='training'){const f=S.fighter;f.xp+=n;let leveled=false;while(f.xp>=xpNeed(f.level)){f.xp-=xpNeed(f.level);f.level++;f.grit+=.7;f.conditioning+=.5;S.credits+=2;leveled=true;log(`Fighter level increased to ${f.level}`);speak(`Level ${f.level}. I can feel that one.`)}checkMoveUnlocks();if(leveled)toast(`RØ reached fighter level ${f.level}.`)}
 function moveEligible(m){if(m.mentor)return false;if(S.fighter.level<m.level)return false;return Object.entries(m.req).every(([k,v])=>S.fighter[k]>=v)}
 function checkMoveUnlocks(){for(const m of MOVES){if(!S.fighter.moves.includes(m.id)&&moveEligible(m)){S.fighter.moves.push(m.id);S.fighter.mastery[m.id]=0;log(`New move learned: ${m.name}`);toast(`NEW MOVE // ${m.name}`);speak(pick([`I figured out ${m.name.toLowerCase()}.`,`Put me in the yard. I want to try ${m.name.toLowerCase()}.`]))}}}
-function train(type){const f=S.fighter;if(S.injury>55&&type!=='rest'){toast('RØ is too injured for hard training.');speak('Not today. Something is still wrong.');return}if(type==='rest'){S.energy=clamp(S.energy+18);S.morale=clamp(S.morale+3);f.fatigue=clamp(f.fatigue-24);arrive('sit','recovering after training',6500);log('Recovery session completed');rememberMind('He completed a recovery session instead of pushing through fatigue.',['training','recovery'],.34,.18);appraiseMind({valence:.04,tags:{joy:.04}});speak('Good. Recovery counts too.');updateUI();save();return}
+function train(type){if(type==='study'){studySession(false);return}const f=S.fighter;if(S.injury>55&&type!=='rest'){toast('RØ is too injured for hard training.');speak('Not today. Something is still wrong.');return}if(type==='rest'){S.energy=clamp(S.energy+18);S.morale=clamp(S.morale+3);f.fatigue=clamp(f.fatigue-24);arrive('sit','recovering after training',6500);log('Recovery session completed');rememberMind('He completed a recovery session instead of pushing through fatigue.',['training','recovery'],.34,.18);appraiseMind({valence:.04,tags:{joy:.04}});speak('Good. Recovery counts too.');updateUI();save();return}
  const labels={strength:'strength',speed:'speed',technique:'technique',grit:'grit',conditioning:'conditioning'};if(!labels[type])return;const r=readiness();let gain=(.45+r*.85-Math.max(0,(f.fatigue-70)/85))*trainingGearMultiplier(type);if(S.energy<18||S.hunger<20||S.hydration<20)gain-=.65;if(gain<0){f[type]=Math.max(5,f[type]+gain*.45);S.health=clamp(S.health-2.5);S.tension=clamp(S.tension+3);speak("I'm cooked. This isn't training anymore.");log(`Overtraining reduced ${type}`)}else{f[type]+=gain;gainXP(9+Math.round(r*6),`${type} training`);speak(pick([`Again. ${type}.`,`That was better.`,`I can work with this.`]));log(`${type} training +${gain.toFixed(1)}`)}
  S.energy=clamp(S.energy-(type==='conditioning'?13:10));S.hunger=clamp(S.hunger-7);S.hydration=clamp(S.hydration-8);f.fatigue=clamp(f.fatigue+(type==='conditioning'?12:9));trainingInjuryCheck(type,r);f.lastTrain=now();S.morale=clamp(S.morale+1);S.boredom=clamp(S.boredom-9);S.aggression=clamp(S.aggression+1.2);arrive('train',`training ${type}`,5500);rememberMind(`He trained ${type}.`,['training','yard',type],.28,.12);beliefShift('yardIdentity',.015);relationShift({respect:.008});checkMoveUnlocks();updateUI();save();beep(260,.07,.02)}
 function renderFighter(){const f=S.fighter;if(!f)return;const need=xpNeed(f.level);$('#fighterHero').innerHTML=`<div class="fighterTop"><div><div class="fighterName">RØ <span>// FIGHTER</span></div><div class="micro">POWER ${fighterPower()} // RECORD ${f.wins}-${f.losses} // YARD RANK #${f.yardRank}${f.leader?' // LEADER':''}</div></div><div class="levelBadge">LEVEL ${f.level}</div></div><div class="xpbar"><div style="width:${Math.min(100,f.xp/need*100)}%"></div></div><div class="micro">XP ${Math.floor(f.xp)} / ${need}</div><div class="fighterGrid">${[['STR',f.strength],['SPD',f.speed],['TECH',f.technique],['GRIT',f.grit],['COND',f.conditioning]].map(([a,v])=>`<div class="fighterStat"><b>${v.toFixed(1)}</b><small>${a}</small></div>`).join('')}</div>`;
@@ -1259,46 +1270,97 @@ function autoLog(text){
 function toggleAutopilot(){
  validateV22();S.world.autopilot.enabled=!S.world.autopilot.enabled;S.world.autopilot.lastDecisionAt=simNow()-999;autoLog(S.world.autopilot.enabled?'AUTOPILOT engaged.':'Manual control restored.');toast(S.world.autopilot.enabled?'AUTOPILOT // ON':'AUTOPILOT // OFF');renderAutopilot();save()
 }
-function setAutopilotMode(mode){if(!['balanced','care','fighter','social'].includes(mode))return;S.world.autopilot.mode=mode;autoLog(`Mode set to ${mode}.`);renderAutopilot();save()}
+const AUTO_FOCUS={
+ balanced:{label:'BALANCED',help:'Even mix: needs first, then training, a little study, and people.'},
+ care:{label:'CARE',help:'Keeps him fed, clean, rested and calm before anything else.'},
+ physical:{label:'PHYSICAL',help:'Strength, grit and conditioning in the gym and yard.'},
+ fighter:{label:'FIGHTING',help:'Power, footwork and technique; sparring and rank fights.'},
+ intellect:{label:'INTELLECT',help:'Study blocks and mental drills for technique and speed.'},
+ social:{label:'INTERACTIONS',help:'Seeks company, works relationships, picks sparring partners.'}
+};
+const AUTO_INTENSITY={
+ easy:{label:'EASY',help:'Careful: rests early, long gaps between decisions.',every:28,readiness:.72,energy:50,need:46,recFatigue:50,recInjury:50,recEnergy:30,social:.45,fight:.80,fightInjury:30,override:false},
+ balanced:{label:'BALANCED',help:'Standard thresholds.',every:18,readiness:.64,energy:42,need:40,recFatigue:62,recInjury:58,recEnergy:24,social:.62,fight:.72,fightInjury:36,override:false},
+ hard:{label:'HARD',help:'Pushes through fatigue, decides fast and may pull him off his schedule to chase the focus. More injury risk.',every:10,readiness:.50,energy:30,need:30,recFatigue:78,recInjury:64,recEnergy:16,social:.85,fight:.62,fightInjury:44,override:true}
+};
+function setAutopilotMode(mode){if(!AUTO_FOCUS[mode])return;S.world.autopilot.mode=mode;autoLog(`Focus set to ${AUTO_FOCUS[mode].label.toLowerCase()}.`);renderAutopilot();save()}
+function setAutopilotIntensity(level){if(!AUTO_INTENSITY[level])return;S.world.autopilot.intensity=level;S.world.autopilot.lastDecisionAt=simNow()-999;autoLog(`Intensity set to ${level}.`);renderAutopilot();save()}
 function setAutopilotRisk(risk){if(!['safe','normal','bold'].includes(risk))return;S.world.autopilot.risk=risk;autoLog(`Risk profile set to ${risk}.`);renderAutopilot();save()}
-function autopilotChooseTraining(){
- const f=S.fighter,stats=['strength','speed','technique','grit','conditioning'];return stats.sort((a,b)=>f[a]-f[b])[0]
+function autopilotChooseTraining(mode='balanced'){
+ const f=S.fighter,pools={physical:['strength','grit','conditioning'],fighter:['strength','speed','technique','grit'],intellect:['technique','speed']},
+  pool=pools[mode]||['strength','speed','technique','grit','conditioning'];return pool.slice().sort((a,b)=>f[a]-f[b])[0]
 }
-function autopilotSocialChoice(){
+function autopilotCompany(loc){return INMATES.filter(n=>isNpcAvailable(n.id)&&inmateScheduleLocation(n)===loc).length}
+function autopilotBestCompany(){return ['block','chow','gym','showers','yard'].map(l=>({l,n:autopilotCompany(l)})).sort((a,b)=>b.n-a.n)[0]}
+function autopilotSocialChoice(mode='balanced',I=AUTO_INTENSITY.balanced){
  const here=INMATES.filter(n=>isNpcAvailable(n.id)&&inmateScheduleLocation(n)===S.world.location);if(!here.length)return false;
- const best=here.map(n=>({n,r:getInmateRel(n.id),s:inmateSentiment(n.id)})).sort((a,b)=>(b.s+b.r.trust)-(a.s+a.r.trust))[0];if(!best)return false;
+ const a=S.world.autopilot,rows=here.map(n=>({n,r:getInmateRel(n.id),s:inmateSentiment(n.id)}));
+ // interactions focus: occasionally turn a familiar face into a sparring partner
+ if(mode==='social'&&a.combat&&['gym','yard'].includes(S.world.location)&&S.fightCooldown<=0&&S.injury<40&&readiness()>I.readiness&&Math.random()<.25){
+  const partner=rows.filter(x=>x.s>-.15).sort((x,y)=>y.r.familiarity-x.r.familiarity)[0];
+  if(partner){S.world.selectedNpc=partner.n.id;interactInmate('spar');autoLog(`Sparred with ${partner.n.name}.`);return true}
+ }
+ const best=rows.sort((a,b)=>(b.s+b.r.trust)-(a.s+a.r.trust))[0];if(!best)return false;
  S.world.selectedNpc=best.n.id;
  if(best.s<-.15){interactInmate('respect');autoLog(`De-escalated with ${best.n.name}.`)}
  else{interactInmate(best.r.familiarity<.35?'talk':'respect');autoLog(`Worked relationship with ${best.n.name}.`)}
  return true
 }
+function autopilotSpar(I){
+ const here=INMATES.filter(n=>isNpcAvailable(n.id)&&inmateScheduleLocation(n)===S.world.location);if(!here.length)return false;
+ const mine=fighterPower(),pick1=here.map(n=>({n,d:Math.abs(inmatePower(n)/2.1-mine/2.1)})).sort((a,b)=>a.d-b.d)[0];
+ if(!pick1)return false;S.world.selectedNpc=pick1.n.id;interactInmate('spar');autoLog(`Sparred with ${pick1.n.name}.`);return true
+}
 function autopilotTick(gameMinutes){
  validateV22();const a=S.world.autopilot;if(!a.enabled||battle)return;
- if(simNow()-(a.lastDecisionAt||-9999)<18)return;a.lastDecisionAt=simNow();
+ if(!AUTO_INTENSITY[a.intensity])a.intensity='balanced';if(!AUTO_FOCUS[a.mode])a.mode='balanced';
+ const I={...AUTO_INTENSITY[a.intensity]},mode=a.mode;
+ if(mode==='care'){I.recFatigue=Math.min(I.recFatigue,45);I.recEnergy=Math.max(I.recEnergy,34)}
+ if(simNow()-(a.lastDecisionAt||-9999)<I.every)return;a.lastDecisionAt=simNow();
  if(S.world.playerStatus?.type){a.decision=`Waiting through ${S.world.playerStatus.type}.`;return}
  if(facilityLockdownActive()){if(S.world.location!=='cell'){S.world.location='cell';sanitizePrisonerPosition(true)}if(S.world.cellmate.assigned&&S.world.cellmate.tension>.48&&a.social){cellmateInteract('boundary',true);autoLog('Managed cellmate tension during lockdown.');return}a.decision='Waiting through facility lockdown.';return}
  const workJob=prisonJob(S.world.work?.assignment);if(workJob&&workShiftActive()&&workEligibleToday()){if(S.world.location!==workJob.location){setWorldLocation(workJob.location,false,'autopilot work call');autoLog(`Reported to ${workJob.name}.`);return}a.decision=`Working ${workJob.name} // ${Math.round(S.world.work.progress)}/45 min`;return}
- if(S.injury>58||S.fighter.fatigue>62||S.energy<24){
+ if(S.injury>I.recInjury||S.fighter.fatigue>I.recFatigue||S.energy<I.recEnergy){
   if(S.world.location!=='cell')setWorldLocation('cell',true,'autopilot recovery');
   train('rest');autoLog('Recovery prioritized.');return
  }
- if(S.hunger<30&&S.food&&S.world.location==='cell'){walkTo(188,478,'walk','autopilot meal');S.prisoner.after='eat';autoLog('Eating available meal.');return}
- if(S.hydration<28&&S.world.location==='cell'&&cellWater()){action('water');autoLog('Hydration prioritized.');return}
- if(S.cellLife.cleanliness<28&&S.world.location==='cell'&&cellWater()&&S.energy>35){cleanCell();autoLog('Cleaned CELL 00.');return}
+ const loc=()=>S.world.location,inCell=loc()==='cell';
+ // needs first: the care bar works anywhere, so autopilot uses it too (same cooldowns)
+ if(S.hunger<I.need-10){
+  if(S.food&&inCell){walkTo(188,478,'walk','autopilot meal');S.prisoner.after='eat';autoLog('Eating available meal.');return}
+  if(careAction('meal')){autoLog('Brought him a meal.');return}
+ }
+ if(S.hydration<I.need-12){
+  if(careAction('water')){autoLog('Hydration prioritized.');return}
+ }
+ if(S.cellLife.cleanliness<28&&inCell&&cellWater()&&S.energy>35){cleanCell();autoLog('Cleaned CELL 00.');return}
+ if(S.hygiene<25&&careAction('wash')){autoLog('Washing up.');return}
  if(a.risk==='safe'&&autopilotOutsideStash())return;
- if(a.mode==='fighter'&&a.training&&scavengingAllowed()&&(!S.world.craft.items.waterBag||!S.world.craft.items.towelRope)&&S.energy>45&&Math.random()<.2){scavengeMaterials();autoLog('Scavenged materials for improvised training gear.');return}
+ if(mode==='fighter'&&a.training&&scavengingAllowed()&&(!S.world.craft.items.waterBag||!S.world.craft.items.towelRope)&&S.energy>45&&Math.random()<.2){scavengeMaterials();autoLog('Scavenged materials for improvised training gear.');return}
  if(S.world.ownCrew.active){const job=S.world.crewJobs.find(j=>!j.done&&!j.failed);if(job&&S.energy>job.energy+15&&a.social){if(job.location&&S.world.location!==job.location)setWorldLocation(job.location,true,'autopilot crew job');if(runCrewJob(job.id,true)){autoLog(`Handled CELL ZERO job: ${job.name}.`);return}}}
  const pending=S.world.favors.find(f=>!f.done&&f.type==='favor');
  if(pending&&a.social&&a.risk!=='safe'&&getInmateRel(pending.from).trust>.35){resolveFavor(pending.id,true);autoLog(`Accepted favor for ${getInmate(pending.from)?.name||'inmate'}.`);return}
  const challenge=S.world.yardChallenge;
- if(challenge?.type==='player'&&a.combat&&a.mode==='fighter'&&a.risk==='bold'&&readiness()>.68&&S.injury<40){answerYardChallenge();autoLog('Answered yard leadership challenge.');return}
- if(a.training&&['gym','yard'].includes(S.world.location)&&readiness()>.64&&S.energy>42&&S.hunger>42&&S.hydration>40){
-  const stat=autopilotChooseTraining();train(stat);autoLog(`Training ${stat}.`);return
+ if(challenge?.type==='player'&&a.combat&&mode==='fighter'&&a.risk==='bold'&&readiness()>I.fight-.04&&S.injury<I.fightInjury){answerYardChallenge();autoLog('Answered yard leadership challenge.');return}
+ const fit=readiness()>I.readiness&&S.energy>I.energy&&S.hunger>I.need+2&&S.hydration>I.need,trainOK=a.training&&fit;
+ const m=S.minute%1440,daytime=m>=390&&m<1200,canMove=now()>=S.restrictionUntil;
+ // HARD intensity may pull him off the daily schedule to chase the focus
+ if(I.override&&canMove&&daytime){
+  if(trainOK&&mode==='physical'&&!['gym','yard'].includes(loc())){setWorldLocation('gym',true,'autopilot hard physical');autoLog('Pushed him to the weight pit.');return}
+  if(trainOK&&mode==='fighter'&&!['gym','yard'].includes(loc())){setWorldLocation('yard',true,'autopilot hard fighting');autoLog('Pushed him to the yard.');return}
+  if(a.social&&mode==='social'&&autopilotCompany(loc())<2){const best=autopilotBestCompany();if(best&&best.n>=2&&best.l!==loc()){setWorldLocation(best.l,true,'autopilot seeking company');autoLog(`Went looking for company in ${PRISON_LOCATIONS[best.l].short}.`);return}}
  }
- if(a.social&&['block','chow','gym','yard','showers'].includes(S.world.location)&&Math.random()<.62&&autopilotSocialChoice())return;
- if(a.mode==='care'&&S.world.location==='cell'&&S.hygiene<45&&cellWater()){walkTo(760,420,'walk','autopilot wash');S.prisoner.after='wash';autoLog('Washing and recovering.');return}
- if(a.mode==='fighter'&&a.combat&&S.world.location==='yard'&&S.fightCooldown<=0&&S.injury<36&&readiness()>.72){
-  const rival=RIVALS.find(r=>r.rank===S.fighter.yardRank-1);if(rival){startBattle(rivalToFighter(rival),'yard');autoLog(`Started rank fight with ${rival.name}.`);return}
+ const social=()=>a.social&&['block','chow','gym','yard','showers'].includes(loc())&&Math.random()<(mode==='social'?Math.min(.97,I.social+.15):I.social)&&autopilotSocialChoice(mode,I);
+ if(mode==='social'&&social())return;
+ if(a.training&&(mode==='intellect'||(mode==='balanced'&&['cell','block'].includes(loc())&&Math.random()<.25))&&S.energy>I.energy-10&&S.hunger>I.need-6&&S.hydration>I.need-6&&studySession(true)){autoLog('Study block.');return}
+ if(trainOK&&['gym','yard'].includes(loc())){
+  const stat=autopilotChooseTraining(mode);train(stat);autoLog(`Training ${stat}.`);return
+ }
+ if(mode!=='social'&&social())return;
+ if(mode==='care'&&inCell&&S.hygiene<45&&cellWater()){walkTo(760,420,'walk','autopilot wash');S.prisoner.after='wash';autoLog('Washing and recovering.');return}
+ if(mode==='fighter'&&a.combat&&S.fightCooldown<=0&&S.injury<I.fightInjury){
+  if(loc()==='yard'&&readiness()>I.fight){const rival=RIVALS.find(r=>r.rank===S.fighter.yardRank-1);if(rival){startBattle(rivalToFighter(rival),'yard');autoLog(`Started rank fight with ${rival.name}.`);return}}
+  if(['gym','yard'].includes(loc())&&readiness()>I.readiness&&Math.random()<.5&&autopilotSpar(I))return
  }
  a.decision='Following schedule / observing.'
 }
@@ -1331,13 +1393,22 @@ function autopilotCombatTick(){
 }
 function renderAutopilot(){
  const h=$('#autopilotPanel');if(!h)return;validateV22();const a=S.world.autopilot;
+ if(!AUTO_INTENSITY[a.intensity])a.intensity='balanced';if(!AUTO_FOCUS[a.mode])a.mode='balanced';
  h.classList.toggle('autopilotOn',a.enabled);
+ const seg=(attr,cur,items,cols)=>`<div class="seg ${cols}">${items.map(([id,label])=>`<button ${attr}="${id}" class="${cur===id?'active':''}" aria-pressed="${cur===id}">${label}</button>`).join('')}</div>`;
  h.innerHTML=`<b>${a.enabled?'AUTOPILOT ACTIVE':'MANUAL CONTROL'}</b><br><span class="autoDecision">${esc(a.decision||'manual')}</span>
  <div class="grid2" style="margin-top:6px"><button id="autoToggle" class="${a.enabled?'warn':'primary'}">${a.enabled?'TAKE MANUAL CONTROL':'ENABLE AUTOPILOT'}</button><button id="autoCombat">${a.combat?'COMBAT AI ON':'COMBAT AI OFF'}</button></div>
- <div class="grid2" style="margin-top:6px"><select id="autoMode"><option value="balanced">BALANCED</option><option value="care">CARE</option><option value="fighter">FIGHTER</option><option value="social">SOCIAL</option></select><select id="autoRisk"><option value="safe">SAFE</option><option value="normal">NORMAL</option><option value="bold">BOLD</option></select></div>
+ <div class="segLabel">FOCUS</div>${seg('data-afocus',a.mode,Object.entries(AUTO_FOCUS).map(([k,v])=>[k,v.label]),'c3')}<div class="segHelp">${esc(AUTO_FOCUS[a.mode].help)}</div>
+ <div class="segLabel">INTENSITY</div>${seg('data-aint',a.intensity,Object.entries(AUTO_INTENSITY).map(([k,v])=>[k,v.label]),'c3')}<div class="segHelp">${esc(AUTO_INTENSITY[a.intensity].help)}</div>
+ <div class="segLabel">RISK</div>${seg('data-arisk',a.risk,[['safe','SAFE'],['normal','NORMAL'],['bold','BOLD']],'c3')}
+ <div class="grid2" style="margin-top:8px"><button id="autoTraining">${a.training?'TRAINING + STUDY ON':'TRAINING + STUDY OFF'}</button><button id="autoSocial">${a.social?'INTERACTIONS ON':'INTERACTIONS OFF'}</button></div>
  <div class="autoLog">${a.log.slice(0,8).map(x=>`<div><span class="autoMuted">D${pad(Math.floor(x.at/1440)+1)} ${stamp(x.at%1440)}</span> // ${esc(x.text)}</div>`).join('')||'No autonomous decisions yet.'}</div>`;
  $('#autoToggle').onclick=toggleAutopilot;$('#autoCombat').onclick=()=>{a.combat=!a.combat;autoLog(`Combat AI ${a.combat?'enabled':'disabled'}.`);renderAutopilot();save()};
- $('#autoMode').value=a.mode;$('#autoMode').onchange=e=>setAutopilotMode(e.target.value);$('#autoRisk').value=a.risk;$('#autoRisk').onchange=e=>setAutopilotRisk(e.target.value)
+ $('#autoTraining').onclick=()=>{a.training=!a.training;autoLog(`Training + study ${a.training?'enabled':'disabled'}.`);renderAutopilot();save()};
+ $('#autoSocial').onclick=()=>{a.social=!a.social;autoLog(`Interactions ${a.social?'enabled':'disabled'}.`);renderAutopilot();save()};
+ $$('[data-afocus]').forEach(b=>b.onclick=()=>setAutopilotMode(b.dataset.afocus));
+ $$('[data-aint]').forEach(b=>b.onclick=()=>setAutopilotIntensity(b.dataset.aint));
+ $$('[data-arisk]').forEach(b=>b.onclick=()=>setAutopilotRisk(b.dataset.arisk))
 }
 function ownCrewCandidate(){return INMATES.filter(n=>!S.world.ownCrew.members.includes(n.id)&&getInmateRel(n.id).trust>.52&&getInmateRel(n.id).respect>.48).sort((a,b)=>getInmateRel(b.id).respect-getInmateRel(a.id).respect)[0]||null}
 function foundOwnCrew(){
@@ -2342,7 +2413,7 @@ function updateHUD(){
 // a low-frequency throttle in the render loop — NOT once per animation frame,
 // which used to thrash the DOM ~60x/sec and made the settings sliders undraggable.
 function updateUI(){
- updateHUD();
+ updateHUD();updateHere();
  $('#careReadout').innerHTML=`RØ is <b>${stateWord().toLowerCase()}</b>. ${needText()}<br>Current activity: <b>${S.prisoner.routine}</b>.<br>Hygiene <b>${Math.round(S.hygiene)}</b> // boredom <b>${Math.round(S.boredom)}</b> // aggression <b>${Math.round(S.aggression)}</b> // loyalty <b>${Math.round(S.loyalty)}</b> // reputation <b>${Math.round(S.reputation)}</b>${S.injury>5?` // injury <b>${Math.round(S.injury)} (${S.injuryName||'bruised'})</b>`:''}.<br>Tray: <b>${S.food?'inside':'empty'}</b>.`;
  $('#cellReadout').innerHTML=`Cell atmosphere: <b>${cellMood()}</b><br>Installed: <b>${Object.entries(S.decor).filter(([,v])=>v).map(([k])=>k).join(', ')||'nothing'}</b>.<br>Privileges: radio <b>${S.radio?'on':'off'}</b>, book <b>${S.book?'issued':'none'}</b>, blanket <b>${S.blanket?'issued':'revoked'}</b>, art kit <b>${S.artkit?'issued':'none'}</b>.<br>Comfort upgrades: mattress <b>${S.cellLife.comforts.mattress?'thick pad':'standard'}</b>, thermal <b>${S.cellLife.comforts.thermalBlanket?'yes':'no'}</b>, photo <b>${S.cellLife.comforts.photo?'hung':'none'}</b>.`;
  renderDecor();renderEvent();renderFighter();renderMind();renderWorldPanel();renderPower();renderCellLife();renderMail();renderPopulationMovement();renderCellmate();renderInformantPanel();renderCameraIntel();renderHistoryJournal();
@@ -2420,6 +2491,67 @@ function action(a){
  case'restriction':S.restrictionUntil=now()+60000;S.morale=clamp(S.morale-8);S.tension=clamp(S.tension+9);S.discipline=clamp(S.discipline+4);S.mem.harsh++;walkTo(270,420,'walk','following cell restriction');log('Cell restriction activated');break;
  }
  mindAction(a);beep(['removeFood','revoke','silence','restriction'].includes(a)?120:330,.06,.02,'square');react(a);updateUI();save();
+}
+// ---- v27: care that works from every screen --------------------------------
+// In CELL 00 the existing tray/sink flow is used. Anywhere else the care is
+// brought to him on the spot. Cooldowns are real time so the buttons can't be
+// spammed into an infinite refill.
+const careLast={};
+function careReady(kind,ms,msg){const t=performance.now();if(careLast[kind]&&t-careLast[kind]<ms){toast(msg);return false}return true}
+function careStamp(kind){careLast[kind]=performance.now()}
+function careAction(kind){
+ const here=S.world.location,inCell=here==='cell',where=(PRISON_LOCATIONS[here]||PRISON_LOCATIONS.cell).name;
+ if(kind==='snack'){action('snack');return true}
+ if(kind==='rest'){if(!careReady('rest',12000,'He is still settling from the last recovery session.'))return false;careStamp('rest');train('rest');return true}
+ if(kind==='meal'){
+  if(inCell){action('meal');return true}
+  if(S.hunger>88){toast('RØ is not hungry.');return false}
+  if(!careReady('meal',20000,'The last meal is still being eaten.'))return false;careStamp('meal');
+  S.hunger=clamp(S.hunger+30);S.hydration=clamp(S.hydration+6);S.morale=clamp(S.morale+2);S.trust=clamp(S.trust+1.4);S.mem.care+=2;S.mem.meals++;
+  log(`Meal brought to RØ in ${where}`);mindAction('meal');react('meal');updateUI();save();return true
+ }
+ if(kind==='water'){
+  if(inCell){if(!cellWater()){toast('WATER SHUTDOWN // sink is dry.');return false}action('water');return true}
+  if(S.hydration>92){toast('RØ is not thirsty.');return false}
+  if(!careReady('water',8000,'He is still drinking.'))return false;careStamp('water');
+  S.hydration=clamp(S.hydration+25);S.mem.care++;S.trust=clamp(S.trust+.6);
+  log(`Water brought to RØ in ${where}`);mindAction('water');react('water');updateUI();save();return true
+ }
+ if(kind==='wash'){
+  if(S.hygiene>88){toast('RØ is already clean.');return false}
+  if(inCell){if(!cellWater()){toast('WATER SHUTDOWN // cannot wash.');return false}walkTo(760,420,'walk','washing at the wall unit');S.prisoner.after='wash';log('Wash ordered');updateUI();save();return true}
+  if(!careReady('wash',20000,'He is still drying off.'))return false;careStamp('wash');
+  const full=here==='showers';S.hygiene=clamp(S.hygiene+(full?45:12));if(full)S.tension=clamp(S.tension-2);
+  log(full?'Showered on the row':`Rinsed up in ${where}`);toast(full?'SHOWERED':'QUICK RINSE');updateUI();save();return true
+ }
+ return false
+}
+// Mental training: technique + speed for little energy, better with something to read.
+function studySession(auto=false){
+ const f=S.fighter;
+ if(S.injury>72){if(!auto)toast('RØ is too hurt to concentrate.');return false}
+ if(S.energy<14||S.hunger<15||S.hydration<15){if(!auto)toast('RØ is too drained to concentrate.');return false}
+ if(simNow()-(S.world.lastStudyAt||-9999)<20){if(!auto)toast('He needs a few minutes before the next study block.');return false}
+ const r=readiness(),book=S.book||(S.cellLife.comforts.paperbacks||0)>0,g=.25+r*.45+(book?.2:0)+(S.artkit?.08:0);
+ f.technique+=g;f.speed+=g*.35;
+ S.energy=clamp(S.energy-6);S.hunger=clamp(S.hunger-2);S.hydration=clamp(S.hydration-2);S.boredom=clamp(S.boredom-14);S.morale=clamp(S.morale+2);
+ S.world.lastStudyAt=simNow();gainXP(6+Math.round(r*4),'study');
+ arrive(book&&S.book?'read':'look',book?'studying from a book':'working through drills in his head',6000);
+ rememberMind(book?'He spent a block of time studying.':'He drilled technique in his head.',['training','study','mind'],.3,.12);appraiseMind({valence:.03,tags:{joy:.03}});
+ log(`Study block: technique +${g.toFixed(2)}`);if(!auto)speak(pick(['Slow is smooth.','I can see the angle now.','Okay. That clicked.']));
+ updateUI();save();return true
+}
+// ---- v27: context menu that follows him around the prison -------------------
+let hereLoc=null;
+function updateHere(){
+ const loc=S.world.location,meta=PRISON_LOCATIONS[loc]||PRISON_LOCATIONS.cell;
+ if(loc!==hereLoc){hereLoc=loc;
+  $$('.hereSec').forEach(el=>{const l=(el.dataset.here||'').split(' ');el.classList.toggle('on',l.includes('all')||l.includes(loc))});
+  const t=$('#hereTab');if(t)t.innerHTML=`HERE<br><span class="hereLoc">${meta.short}</span>`;const h=$('#hereTitle');if(h)h.textContent=`${meta.name} // ACTIONS`;
+  const dh=$('#dockHint');if(dh)dh.textContent=loc==='cell'?'in cell: tray + sink':'away: brought to him on the spot'}
+ const {cur,next}=worldScheduleStatus();
+ $('#hereInfo').innerHTML=`<b>${meta.name}</b><br>${meta.desc}<br>NOW <b>${esc(cur.label)}</b> // NEXT ${stamp(next.start)} ${esc(next.label)}`;
+ const at=$('#autoTab');if(at)at.textContent=S.world.autopilot?.enabled?'AUTO●':'AUTO'
 }
 function decorate(k){const d=DECORS.find(x=>x[0]===k);if(!d)return;const cost=d[3];if(!S.owned[k]&&!S.decor[k]){if(S.credits<cost){toast('Not enough allocation credits.');return}S.credits-=cost;S.owned[k]=true}S.decor[k]=!S.decor[k];S.morale=clamp(S.morale+(S.decor[k]?3:-1));S.trust=clamp(S.trust+(S.decor[k]?.5:-.2));log(`${d[1]} ${S.decor[k]?'installed':'removed'}`);if(S.decor[k])speak(pick(["Okay. That actually helps.","It's weird how much one thing changes the room.","You picked that? ...I like it."]));updateUI();save()}
 function updateAnchors(){const a=S.mind.anchors||{};if(!a.survivor&&(S.fighter.wins>=5||S.mind.beliefs.yardIdentity>.78)){a.survivor=true;rememberMind('He stopped thinking of himself as temporary here. Survival became identity.',['anchor','identity','yard'],1,.15);toast('ANCHOR MEMORY // SURVIVOR')}if(!a.distrustful&&S.mind.beliefs.rulesAreFair<.20&&S.mind.relationship.grudges.length>=2){a.distrustful=true;rememberMind('He decided rules are only another weapon people use.',['anchor','belief','grudge'],1,-.35);toast('ANCHOR MEMORY // DISTRUST')}if(!a.bonded&&S.mind.beliefs.controllerCares>.78&&S.mind.relationship.affection>.30){a.bonded=true;rememberMind('He decided the person behind the terminal is part of his life.',['anchor','relationship'],1,.45);toast('ANCHOR MEMORY // BOND')}S.mind.anchors=a}
@@ -2932,7 +3064,13 @@ function drawPrisoner(x,y){
  X.textAlign='left'
 }
 function openTab(id){$$('.tab').forEach(x=>x.classList.toggle('active',x.dataset.tab===id));$$('.panel').forEach(x=>x.classList.toggle('active',x.dataset.panel===id))}
-let frameFailStreak=0,uiAccum=0;
+let frameFailStreak=0,uiAccum=0,uiHoldUntil=0;
+// Never rebuild the side panels while a pointer is down inside them: a rebuild
+// between press and release makes the browser drop the click. A short grace
+// after release lets the click land; the 2.5 s cap covers a lost pointerup.
+document.addEventListener('pointerdown',e=>{if(e.target.closest&&e.target.closest('#sidebar'))uiHoldUntil=performance.now()+2500},true);
+const releaseUiHold=()=>{uiHoldUntil=performance.now()+200};
+document.addEventListener('pointerup',releaseUiHold,true);document.addEventListener('pointercancel',releaseUiHold,true);
 function frame(ts){
  const dt=Math.min(.08,(ts-last)/1000);last=ts;
  try{
@@ -2942,7 +3080,7 @@ function frame(ts){
   // HUD (clock/meters) stays smooth per-frame; the heavy side panels only
   // rebuild a few times a second. Discrete actions still call updateUI() for
   // an immediate refresh, so nothing feels laggy on interaction.
-  updateHUD();uiAccum+=dt;if(uiAccum>=.4){uiAccum=0;updateUI();}
+  updateHUD();uiAccum+=dt;if(uiAccum>=.4&&performance.now()>=uiHoldUntil){uiAccum=0;updateUI();}
   frameFailStreak=0;
  }catch(err){
   // Never let a single bad frame permanently freeze the scene: the render
@@ -2962,7 +3100,7 @@ function frame(ts){
 }
 C.addEventListener('pointermove',e=>{const r=C.getBoundingClientRect();pointer.x=(e.clientX-r.left)/r.width;pointer.y=(e.clientY-r.top)/r.height;pointer.cx=pointer.x*C.width;pointer.cy=pointer.y*C.height;hover=hitTest(pointer.cx,pointer.cy);const card=$('#hoverCard');if(hover){card.style.display='block';card.style.left=Math.min(e.clientX-r.left+14,r.width-250)+'px';card.style.top=Math.min(e.clientY-r.top+14,r.height-70)+'px';$('#hoverTitle').textContent=hover.name;$('#hoverText').textContent=hover.desc;C.style.cursor='pointer'}else{card.style.display='none';C.style.cursor='crosshair'}});
 C.addEventListener('pointerleave',()=>{hover=null;$('#hoverCard').style.display='none'});C.addEventListener('pointerdown',e=>{const r=C.getBoundingClientRect(),cx=(e.clientX-r.left)/r.width*C.width,cy=(e.clientY-r.top)/r.height*C.height;const h=hitTest(cx,cy);if(h){hotspotClick(h.id);beep(390,.03,.01)}else{const minY=S.world.location==='cell'?350:180,maxY=S.world.location==='cell'?500:535;const wp=S.world.location==='cell'?{x:cx,y:cy}:camUnproject(cx,cy);walkTo(Math.min(820,Math.max(140,wp.x)),Math.min(maxY,Math.max(minY,wp.y)),'walk',`walking through ${currentLocationMeta().short.toLowerCase()}`)}});
-$$('.tab').forEach(b=>b.onclick=()=>openTab(b.dataset.tab));$$('[data-action]').forEach(b=>b.onclick=()=>action(b.dataset.action));$$('[data-say]').forEach(b=>b.onclick=()=>send(b.dataset.say));$('#sendBtn').onclick=()=>send($('#chatInput').value);$('#chatInput').addEventListener('keydown',e=>{if(e.key==='Enter')send(e.target.value)});$('#saveBtn').onclick=()=>save(true);$('#audioBtn').onclick=()=>{S.audio=!S.audio;updateUI();if(S.audio)beep(440)};$('#helpBtn').onclick=()=>toast('WORLD shows RØ’s prison schedule and other inmates. Click inmates in the live feed to select them. CELL still contains the detailed custody controls.');
+$$('.tab').forEach(b=>b.onclick=()=>openTab(b.dataset.tab));$$('[data-action]').forEach(b=>b.onclick=()=>action(b.dataset.action));$$('[data-care]').forEach(b=>b.onclick=()=>careAction(b.dataset.care));$$('[data-say]').forEach(b=>b.onclick=()=>send(b.dataset.say));$('#sendBtn').onclick=()=>send($('#chatInput').value);$('#chatInput').addEventListener('keydown',e=>{if(e.key==='Enter')send(e.target.value)});$('#saveBtn').onclick=()=>save(true);$('#audioBtn').onclick=()=>{S.audio=!S.audio;updateUI();if(S.audio)beep(440)};$('#helpBtn').onclick=()=>toast('WORLD shows RØ’s prison schedule and other inmates. Click inmates in the live feed to select them. CELL still contains the detailed custody controls.');
 if($('#locateR0'))$('#locateR0').onclick=locatePrisoner;
 if($('#knockWall'))$('#knockWall').onclick=knockWall;if($('#listenVent'))$('#listenVent').onclick=listenVent;
 $$('[data-train]').forEach(b=>b.onclick=()=>train(b.dataset.train));$('#yardFightBtn').onclick=launchNextRival;$('#exportBtn').onclick=async()=>{const code=encodePrisoner();$('#friendCode').value=code;try{await navigator.clipboard.writeText(code);toast('Prisoner code copied.')}catch(e){toast('Prisoner code placed in the box.')}$('#friendStatus').textContent='Your current RØ fighter snapshot is ready to share.'};$('#importFightBtn').onclick=()=>{const d=decodePrisoner($('#friendCode').value);if(!d){$('#friendStatus').textContent='Invalid or damaged prisoner code.';toast('Could not read that prisoner code.');return}const foe=friendToFighter(d);$('#friendStatus').textContent=`Loaded ${foe.name} // LV ${foe.level} // POWER ${d.power||'?'}`;startBattle(foe,'friend')};$('#battleCloseBtn').onclick=()=>{clearBattleTimers();battle=null;$('#battleModal').style.display='none';updateUI()};BC=$('#battleCanvas');
